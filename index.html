@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EarnShark | Dashboard</title>
+
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default " style="margin:0 !important;">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="img/logo.png" class="img-responsive" style="width: 110px;padding-top: -5px;margin-left: 6px;">
+                </a>
+            </div>
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+    <div class="container-fluid content">
+        <div class="row">
+            <div class="col-md-12 titleBar">
+                <div class="col-md-10">
+                    <div class="col-md-1">
+                        <a ng-click="goBacktoDashboard()" style="cursor: pointer;color: #333333;margin-left: -13px;"><i class="fa fa-chevron-circle-left fa-2x" style="padding-top: 8px;"></i></a>
+                    </div>
+                    <div class="col-md-5" style="padding-top: 12px;margin-left: -73px;">
+                        <h4 style="display: inline;"><b>Analytics</b></h4>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-5" style="margin-right:15em;">
+                <div id="combo_chart"></div>
+            </div>
+            <div class="col-md-3">
+                <!-- MATERIAL CHART IS POSSIBLE -->
+                <div id="line_chart"></div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-3" style="margin-right:8.5em;">
+                <div id="pie_chart"></div>
+            </div>
+            <div class="col-md-3" style="margin-right:8.5em;">
+                <div id="scatter_chart"></div>
+            </div>
+            <div class="col-md-3">
+                <div id="column_chart"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="js/chart.js"></script>
+
+</body>
+
+</html>
